@@ -1,0 +1,260 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Tahoma, sans-serif;
+    background: #f8f6f0;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 25px auto;
+}
+
+/* ===== CARD ===== */
+
+.card {
+    background: #ffffff;
+    border-radius: 22px;
+    padding: 30px;
+    margin-bottom: 24px;
+    border: 1px solid #e6d5a3;
+    box-shadow: 0 8px 25px rgba(180, 150, 70, 0.12);
+}
+
+/* ===== PROFILE ===== */
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background: linear-gradient(135deg, #ffffff, #faf7ed);
+    border: 2px solid #d4af37;
+    border-radius: 25px;
+}
+
+.avatar {
+    width: 165px;
+    height: 165px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #d4af37;
+    padding: 5px;
+    background: #ffffff;
+    box-shadow: 0 5px 20px rgba(212, 175, 55, 0.25);
+}
+
+h1 {
+    margin: 0 0 10px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2.5rem;
+    color: #b08d19;
+}
+
+h2 {
+    margin-top: 0;
+    color: #b08d19;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #e3cf91;
+    padding-bottom: 10px;
+}
+
+h3 {
+    margin-bottom: 6px;
+    color: #a47f12;
+}
+
+.headline {
+    font-size: 1.1rem;
+    color: #777;
+}
+
+/* ===== EDUCATION / TRAINING ===== */
+
+.item {
+    padding: 18px 20px;
+    margin-bottom: 14px;
+    background: #fffdf7;
+    border: 1px solid #ead9a7;
+    border-left: 5px solid #d4af37;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.item:last-child {
+    margin-bottom: 0;
+}
+
+.item h3 {
+    color: #b08d19;
+}
+
+/* ===== SKILLS ===== */
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill-badge {
+    background: #ffffff;
+    color: #a47f12;
+    border: 2px solid #d4af37;
+    border-radius: 30px;
+    padding: 12px 20px;
+    min-width: 150px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.skill-badge:hover {
+    background: #d4af37;
+    color: white;
+    transform: translateY(-3px);
+}
+
+.skill-badge strong {
+    font-size: 1rem;
+}
+
+.skill-badge span {
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 4px;
+    color: #777;
+}
+
+/* ===== EXTRA SECTIONS ===== */
+
+.luxury-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.luxury-box {
+    flex: 1 1 250px;
+    background: #fffdf7;
+    border: 1px solid #e0c878;
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(180, 150, 70, 0.08);
+}
+
+.luxury-box h3 {
+    color: #b08d19;
+    margin-top: 0;
+}
+
+.luxury-box p {
+    color: #666;
+}
+
+/* ===== NOTE ===== */
+
+.note {
+    margin-top: 16px;
+    padding: 12px;
+    background: #fffaf0;
+    border-left: 4px solid #d4af37;
+    border-radius: 8px;
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+    text-align: center;
+    color: #999;
+    padding: 25px;
+    font-size: 0.9rem;
+}
+
+/* ===== CODE ===== */
+
+code {
+    background: #f7f1df;
+    color: #a47f12;
+    padding: 3px 6px;
+    border-radius: 5px;
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 650px) {
+
+    .container {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px 18px;
+    }
+
+    .avatar {
+        width: 135px;
+        height: 135px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .card {
+        padding: 22px;
+    }
+
+    .skill-badge {
+        flex: 1 1 45%;
+    }
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        margin: 15px auto;
+    }
+
+    .card {
+        padding: 20px;
+        margin-bottom: 15px;
+    }
+
+    .hero {
+        gap: 15px;
+    }
+
+    .avatar {
+        width: 120px;
+        height: 120px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .skill-badge {
+        min-width: 120px;
+        padding: 10px 15px;
+    }
+}
